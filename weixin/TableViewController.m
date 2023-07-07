@@ -16,12 +16,12 @@
 @property (nonatomic, strong) NSMutableArray *weixinFrame;
 @property (nonatomic, weak) UIButton *btncover;
 @property (nonatomic, assign) CGRect picFrame;
-@property (nonatomic, weak) UIButton *picture;
-
+@property (nonatomic, weak) UIButton *picButton;
+@property (nonatomic, weak) UITableViewCell *father;
 @end
 
 @implementation TableViewController
-
+#pragma mark - 单击放大
 - (void)BtnClick:(UIButton *)_picture{
     if(self.btncover){
         [self smallImage];
@@ -31,46 +31,45 @@
 }
 
 - (void)bigImage:(UIButton *)_picture{
-    UIButton *tmpPic= [_picture snapshotViewAfterScreenUpdates:NO];
-
-    tmpPic.frame = _picture.frame;
-    _picture = tmpPic;
+    self.tableView.scrollEnabled =NO;
     
     //记录原始frame
-   _picFrame = _picture.frame;
-   self.picture = _picture;
+    //要进行坐标系的转换
+//   self.picFrame = [self.tableView convertRect:_picture.frame fromView:_picture.superview];
+    self.picFrame = _picture.frame;
+   self.picButton = _picture;
    
    //创建一个全屏的黑底
    UIButton * btncover = [[UIButton alloc] init];
-   [self.tableView addSubview:btncover];
-   
-   btncover.frame = CGRectMake(0, 0, 414, 896-28);
+   [[UIApplication sharedApplication].keyWindow addSubview:btncover];
+   btncover.frame = [UIScreen mainScreen].bounds;
    btncover.backgroundColor = [UIColor blackColor];
    
    //把图片放到黑底上面
-   [self.tableView addSubview:_picture];
-   [self.tableView bringSubviewToFront:_picture];
+   //[self.tableView addSubview:_picture];
+    self.father = _picture.superview;
+   [btncover addSubview:_picture];
    
    //图片放大
    CGRect picFrame = _picture.frame;
    CGFloat multiple = btncover.frame.size.width / picFrame.size.width;
    _picture.transform = CGAffineTransformMakeScale(multiple, multiple);
-   //_picture.center = btncover.center;
-   _picture.transform = CGAffineTransformTranslate(self.tableView.transform, 0, 200);
+   _picture.center = btncover.center;
     
    self.btncover = btncover;
    [btncover addTarget:self action:@selector(smallImage) forControlEvents:UIControlEventTouchUpInside];
-   [_picture addTarget:self action:@selector(smallImage) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void)smallImage{
+    self.tableView.scrollEnabled = YES;
+    
     //图片还原
-    self.picture.frame = self.picFrame;
-    [self.picture removeFromSuperview];
+    self.picButton.frame = self.picFrame;
+
+    [self.father addSubview:self.picButton];
     //移除阴影
     [self.btncover removeFromSuperview];
     self.btncover = nil;
-    //[self.picture removeFromSuperview];
 }
 
 

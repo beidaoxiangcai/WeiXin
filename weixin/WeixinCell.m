@@ -27,7 +27,6 @@
 @implementation WeixinCell
 
 - (void)clickBig{
-    
     NSLog(@"Method in view");
     //在回调代理方法时，首先判断自身的代理是否实现了代理方法，否则会导致崩溃
     //如果自身代理实现了代理方法，在该方法中回调代理实现的具体的代理方法
@@ -75,8 +74,8 @@
         self.time.font = [UIFont systemFontOfSize:20];
         self.time.textColor = [UIColor colorWithRed: 0.45 green: 0.44 blue: 0.45 alpha: 1.00];
         
-        [_picture addTarget:self.contentView.superview action:@selector(clickBig) forControlEvents:UIControlEventTouchUpInside];
-        
+        //单击放大事件
+        [_picture addTarget:self action:@selector(clickBig) forControlEvents:UIControlEventTouchUpInside];
         
     }
     
