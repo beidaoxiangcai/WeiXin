@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>linda</string>
+		<key>icon</key>
+		<string>icon02</string>
+		<key>text</key>
+		<string>hahahaha~</string>
+		<key>time</key>
+		<string>3 days ago</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>jack</string>
+		<key>icon</key>
+		<string>icon01</string>
+		<key>text</key>
+		<string>today is good.</string>
+		<key>picture</key>
+		<string>pic01.jpg</string>
+		<key>time</key>
+		<string>2 days ago</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>jack</string>
+		<key>icon</key>
+		<string>icon01</string>
+		<key>text</key>
+		<string>今天天气真好，小猫咪真可爱呀哈哈哈哈哈哈！！</string>
+		<key>picture</key>
+		<string>pic01.jpg</string>
+		<key>time</key>
+		<string>2 days ago</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>jack</string>
+		<key>icon</key>
+		<string>icon01</string>
+		<key>picture</key>
+		<string>pic01.jpg</string>
+		<key>time</key>
+		<string>2 days ago</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>jack</string>
+		<key>icon</key>
+		<string>icon01</string>
+		<key>text</key>
+		<string>today is good.</string>
+		<key>picture</key>
+		<string>pic01.jpg</string>
+		<key>time</key>
+		<string>2 days ago</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>linda</string>
+		<key>icon</key>
+		<string>icon02</string>
+		<key>text</key>
+		<string>hahahaha~</string>
+		<key>time</key>
+		<string>3 days ago</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>linda</string>
+		<key>icon</key>
+		<string>icon02</string>
+		<key>text</key>
+		<string>hahahaha~</string>
+		<key>time</key>
+		<string>3 days ago</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>linda</string>
+		<key>icon</key>
+		<string>icon02</string>
+		<key>text</key>
+		<string>hahahaha~</string>
+		<key>time</key>
+		<string>3 days ago</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>linda</string>
+		<key>icon</key>
+		<string>icon02</string>
+		<key>text</key>
+		<string>hahahaha~</string>
+		<key>time</key>
+		<string>3 days ago</string>
+	</dict>
+</array>
+</plist>
