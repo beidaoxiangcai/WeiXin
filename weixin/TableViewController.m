@@ -10,6 +10,7 @@
 #import "WeiXin.h"
 #import "WeiXinFrame.h"
 #import "WeixinCell.h"
+#import "TableViewHeader.h"
 
 @interface TableViewController () <UITableViewDataSource, UITableViewDelegate,MyBtnDelegate>
 
@@ -72,10 +73,6 @@
     self.btncover = nil;
 }
 
-
-
-
-
 #pragma mark - 懒加载
 - (NSMutableArray*) weixinFrame{
     if (_weixinFrame == nil) {
@@ -97,12 +94,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
      NSLog(@"view did load！！！");
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+    TableViewHeader *header = [TableViewHeader HeaderView];
+    self.tableView.tableHeaderView = header;
 }
 
 

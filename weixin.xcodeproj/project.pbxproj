@@ -21,6 +21,8 @@
 		74931D1E2A558F29007F3524 /* weixinUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74931D1D2A558F29007F3524 /* weixinUITests.m */; };
 		74931D332A5590E3007F3524 /* WeiXin.m in Sources */ = {isa = PBXBuildFile; fileRef = 74931D322A5590E3007F3524 /* WeiXin.m */; };
 		74931D392A55A12F007F3524 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74931D382A55A12F007F3524 /* TableViewController.m */; };
+		74BADDDC2A58F2BA003E1FD6 /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74BADDDB2A58F2BA003E1FD6 /* TableViewHeader.xib */; };
+		74BADDDF2A58F755003E1FD6 /* TableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BADDDE2A58F755003E1FD6 /* TableViewHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,9 @@
 		74931D322A5590E3007F3524 /* WeiXin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeiXin.m; sourceTree = "<group>"; };
 		74931D372A55A12F007F3524 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		74931D382A55A12F007F3524 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		74BADDDB2A58F2BA003E1FD6 /* TableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
+		74BADDDD2A58F755003E1FD6 /* TableViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewHeader.h; sourceTree = "<group>"; };
+		74BADDDE2A58F755003E1FD6 /* TableViewHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +125,10 @@
 			children = (
 				74931D372A55A12F007F3524 /* TableViewController.h */,
 				74931D382A55A12F007F3524 /* TableViewController.m */,
+				74BADDDB2A58F2BA003E1FD6 /* TableViewHeader.xib */,
 				74931D042A558F28007F3524 /* LaunchScreen.storyboard */,
+				74BADDDD2A58F755003E1FD6 /* TableViewHeader.h */,
+				74BADDDE2A58F755003E1FD6 /* TableViewHeader.m */,
 				740B5AF22A565C6F0077855C /* WeixinCell.h */,
 				740B5AF32A565C6F0077855C /* WeixinCell.m */,
 				74931CFF2A558F26007F3524 /* Main.storyboard */,
@@ -298,6 +306,7 @@
 				74931D062A558F28007F3524 /* LaunchScreen.storyboard in Resources */,
 				74931D032A558F28007F3524 /* Assets.xcassets in Resources */,
 				740B5AED2A5644B20077855C /* weixin.plist in Resources */,
+				74BADDDC2A58F2BA003E1FD6 /* TableViewHeader.xib in Resources */,
 				74931D012A558F26007F3524 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +334,7 @@
 			files = (
 				74931D392A55A12F007F3524 /* TableViewController.m in Sources */,
 				740B5AF42A565C6F0077855C /* WeixinCell.m in Sources */,
+				74BADDDF2A58F755003E1FD6 /* TableViewHeader.m in Sources */,
 				74931D332A5590E3007F3524 /* WeiXin.m in Sources */,
 				74931CF82A558F26007F3524 /* AppDelegate.m in Sources */,
 				74931D092A558F29007F3524 /* main.m in Sources */,
